@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: #ffe4e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #8b4513; /* Brown */
+        }
+
+        button {
+            background-color: #ffc0cb; /* Pink */
+            color: #8b4513; /* Brown */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ffb6c1; /* Lighter Pink on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h1>Would you be my girlfriend, Fauzia?</h1>
+    <button onclick="answer('Yes')">Yes</button>
+    <button onclick="answer('No')">No</button>
+</div>
+
+<script>
+    function answer(response) {
+        if (response === 'Yes') {
+            alert('Congratulations! You said Yes! 😊');
+        } else {
+            alert('Oh no! Maybe next time. 😢');
+        }
+    }
+</script>
+
+</body>
+</html>
